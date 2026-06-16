@@ -96,7 +96,7 @@ yarn build
 | Task type             | Use instruction file                         | Use prompt template                          |
 | --------------------- | -------------------------------------------- | -------------------------------------------- |
 | Bug fix               | `.github/instructions/bug-fix.instructions.md`   | `.github/prompts/bug-triage.prompt.md`       |
-| New feature           | `.github/instructions/feature.instructions.md`   | `.github/prompts/refactor.prompt.md`         |
+| New feature           | `.github/instructions/feature.instructions.md`   | —                                            |
 | Writing/adding tests  | `.github/instructions/test.instructions.md`      | `.github/prompts/regression-test.prompt.md`  |
 | Documentation update  | `.github/instructions/docs.instructions.md`      | —                                            |
 | Release / changelog   | `.github/instructions/release.instructions.md`   | `.github/prompts/release-prep.prompt.md`     |
