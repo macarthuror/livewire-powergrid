@@ -152,6 +152,46 @@ If you have never written a PR before, see this excellent [example](https://gith
 
 <hr/>
 
+## AI Agent Files
+
+This repository includes GitHub Copilot AI agent configuration files to help contributors and maintainers work more consistently.
+
+### File locations
+
+```
+.github/
+  copilot-instructions.md      # Repository-wide baseline for all AI interactions
+  workflows/
+    copilot-setup-steps.yml    # Pre-installs PHP/Composer/Node.js for Copilot cloud agent
+  instructions/
+    bug-fix.instructions.md    # Instructions for fixing bugs
+    feature.instructions.md    # Instructions for implementing new features
+    test.instructions.md       # Instructions for writing/improving tests
+    docs.instructions.md       # Instructions for documentation updates
+    release.instructions.md    # Instructions for preparing releases
+  prompts/
+    bug-triage.prompt.md       # Prompt to assess an incoming bug report
+    minimal-reproduction.prompt.md  # Prompt to create a minimal reproduction
+    regression-test.prompt.md  # Prompt to add a regression test for a fixed bug
+    refactor.prompt.md         # Prompt to safely refactor code
+    release-prep.prompt.md     # Prompt to prepare a release
+```
+
+### How to use
+
+- When starting a task with GitHub Copilot, reference the relevant instruction file or prompt template to keep the work consistent with repository standards.
+- For bug fixes, start with `bug-triage.prompt.md` to assess the issue, then follow `bug-fix.instructions.md`.
+- For new features, follow `feature.instructions.md`.
+- For release preparation, use `release-prep.prompt.md` together with `release.instructions.md`.
+- The `copilot-instructions.md` file applies automatically to all Copilot interactions in this repository.
+
+### Maintenance
+
+Please update the instruction files and prompt templates when:
+- Validation commands change (e.g., new scripts added to `composer.json`).
+- The public API conventions evolve.
+- New supported frameworks or PHP/Laravel/Livewire versions are added.
+
 If you have any questions, do not hesitate to reach out to the community in the repository [Discussions](https://github.com/Power-Components/livewire-powergrid/discussions) tab.
 
 Thank you,
